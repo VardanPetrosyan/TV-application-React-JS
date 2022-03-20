@@ -1,0 +1,17 @@
+.home-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "f"
+        "s";
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 1fr;
+}
+section.home-page__featured-video-box.featured-video-box{
+  grid-area: f;
+}
+section.home-page__slider-box.featured-slider-box{
+  grid-area: s;
+}

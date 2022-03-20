@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Tajawal';
+    src: local('Tajawal'), url('../fonts/tajawal/Tajawal-ExtraLight.ttf') format('opentype');
+}
+main.page-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: minmax(100px,1fr) 10fr;
+}
+.nav-bar{
+    grid-area: a;
+    background-color: #040404;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    grid-area: b;
+    position: relative;
+    z-index: 1;
+}
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.not-found span{
+    font-size: 40px;
+    color: white;
+}
